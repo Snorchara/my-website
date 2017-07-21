@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <h1>Oleh Beksiak</h1>
+        <h1><a id="home">Oleh Beksiak</a></h1>
         <h2>Personal website</h2>
         <div>
              <a href="index.html#home">Home</a>
@@ -14,49 +14,48 @@
              <a href="index.html#contacts">Contacts</a>
              <a href="index.html#feedback">Feedback</a>
         </div>
-        <select>
-              <option>English</option>
-              <option>Ukrainian</option>
+        <select name="forma" onchange="location = this.value;">
+              <option value="index.html">English</option>
+              <option value="index-ua.html">Ukrainian</option>
         </select>
     </header>
     <img src="img/header.png" width="950" height="400" alt="Animated me">
     <aside>
-        <h2> <a id="home"> A little about me</a> </h2>
+        <h2>  A little about me </h2>
         <article>
-            orem ipsum dolor sit amet, ne alia dicam duo, in mediocrem constituam vix, no ius integre vulputate. Vis in dicam malorum evertitur. Sed eu similique dissentiet. An inani euismod tincidunt vis. Minim noluisse sit an, no mei summo menandri ullamcorper, in sanctus tacimates moderatius usu. Ei has consul noluisse, at erat discere sit.
-
-Aperiam theophrastus ea mel, ne aliquando voluptatibus his, has minim concludaturque in. Cu essent eripuit incorrupte usu. Ius elitr epicurei efficiendi eu, pro malis altera te, et vel nullam recusabo. Ne pro feugait pericula, et pro omnes menandri maluisset. Sale munere disputationi eu eos.
-
-Putent cetero his te, fugit aeterno consetetur te eum. Quem illud qualisque eu est. At mea quot aliquip noluisse, ei ipsum invidunt erroribus quo, et quem sensibus vis. Ius no tation placerat theophrastus, cetero definitionem ne vim, doming nominavi vim et. Volumus scriptorem eam ne, admodum legendos nec ei, et nam consequat scriptorem. Ea qui percipit atomorum expetendis.
-
-Ea ius nullam periculis. His te ubique conceptam, te quod brute consectetuer sed, et his sumo lorem summo. Ei oratio nusquam lucilius ius, et sanctus ceteros percipit mei, ea est omittantur vituperatoribus. Ut mel repudiare sententiae, et probo illud mei, sit quod atqui hendrerit id. Mei laboramus evertitur ei. No sed aliquid apeirian intellegat, sit velit errem nostrud an, et mea facete aliquando ullamcorper.
-
-Id eam reque sanctus democritum, dolorem lobortis invenire cu mei. Nec voluptaria sententiae ex. In vel mazim alienum recusabo, euismod democritum vis at, lorem suscipit eu mei. Sed et aliquid officiis indoctum, verear legendos in eos. Eam stet unum te, putent regione tincidunt eu quo, ne modo vidit his. In solet volutpat ius, nec an ridens nominati efficiendi.
+           Hello, you have visited my personal website. Hope you feel comfortable around? Go ahead click those buttons) But first read this little info about me and this website. Well if 
+           you haven't already noticed from the header of the web-page, my name is Oleh Beksiak. I dont wish to give much real info about me (i like to keep a little of anonymity on the 
+           internet) and as this web page is designed as my personal 1st front-end project. <br>
         </article>
         <div>
             <h2> <a id="about">My biography timeline</a></h2>
-            <div>
-             <a href="index.html#tl-1996">1996</a>
-             <a href="index.html#tl-2013">2013</a>
-             <a href="index.html#tl-2017">2017</a>
-             <a href="index.html#future">future</a>
-            </div>
-            <iframe src="tl-1996.html">
-            </iframe>
+            <iframe src="tl-1996.html" width="400"></iframe>
         </div>
     </aside>
     <hr>    
     <h2><a id="contacts">You can find me here</a></h2>
-    <div>
-        <img src="img/twitter.png" width="85" height="85" alt="twitter logo">
-        <img src="img/instagram.png" width="85" height="85" alt="instagram logo">
-        <img src="img/g+.png" width="85" height=85 alt="google + logo">
-        <img src="img/github.png" width="85" height="85" alt="github logo">
-        <img src="img/fb.png" width="85" height="85" alt="facebook logo">
-    </div>
+    <table>
+        <tr>
+            <td><a href="https://twitter.com/?lang=uk">Twitter</a></td>
+            <td>  <a href="https://www.instagram.com/">Instagram</a></td>
+            <td> <a href="https://accounts.google.com">Google+</a></td>
+             <td>  <a href="https://github.com/Snorchara">Github</a></td>
+            <td><a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/twitter.png" width="85" height="85" alt="twitter logo"> </td>
+            <td><img src="img/instagram.png" width="85" height="85" alt="instagram logo"></td>
+            <td><img src="img/g+.png" width="85" height=85 alt="google + logo"></td>
+            <td><img src="img/github.png" width="85" height="85" alt="github logo"></td>
+            <td><img src="img/fb.png" width="85" height="85" alt="facebook logo"></td>
+        </tr>
+    </table>
     <h2>...or here</h2>
-    <img src="img/sample.png" alt="gmaps sample">
-    <hr>
+    <!-- <img src="img/sample.png" alt="gmaps sample">-->
+   <iframe width="600"height="450"frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o
+    &q=Fedkovycha 60,Ukraine+Lviv" allowfullscreen>
+</iframe>
     <h2><a id="feedback">Leave me a message</a></h2>
     <br>
     <form action="https://formspree.io/hawke8356@gmail.com" method="POST">
@@ -87,9 +86,9 @@ Id eam reque sanctus democritum, dolorem lobortis invenire cu mei. Nec voluptari
           <a href="https://www.facebook.com/profile.php?id=100004192967440"> https://www.facebook.com/beksiak/ </a>
           <br>
              <div>
-             <a href="index.html#home">Home</a>
-             <a href="index.html#about">About me</a>
-             <a href="index.html#contacts">Contacts</a>
+             <a href="index.html#home">Home</a>/
+             <a href="index.html#about">About me</a>/
+             <a href="index.html#contacts">Contacts</a>/
              <a href="index.html#feedback">Feedback</a>
         </div>
          <p>Lviv 2017 O.Beksiak</p>

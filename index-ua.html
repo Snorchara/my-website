@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+</head>
+<body>
+    <header>
+        <h1><a id="home">Бексяк Олег</a></h1>
+        <h2>Персональний веб-сайт</h2>
+        <div>
+             <a href="index.html#home">На початок</a>
+             <a href="index.html#about">Про мене</a>
+             <a href="index.html#contacts">Контактні дані</a>
+             <a href="index.html#feedback">Зв'язатись зі мною</a>
+        </div>
+        <select name="forma" onchange="location = this.value;">
+            <option value="index-ua.html">Українська</option>
+            <option value="index.html">English</option>
+        </select>
+    </header>
+    <img src="img/header.png" width="950" height="400" alt="Намальований я">
+    <aside>
+        <h2>  Трішки про мене </h2>
+        <article>
+          Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
+            Ви ще не помітили в заголовку веб-сторінки, мене звати Олег Бексяк. Я не хочу надавати багато особистої реальної інформації  (я хотів би дотримуватись трохи анонімності в мережі
+            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект. <br>
+            
+           
+           
+        </article>
+        <div>
+            <h2> <a id="about">Часова лінія моєї біографії</a></h2>
+            <iframe src="tl-1996-ua.html" width="400"></iframe>
+        </div>
+    </aside>
+    <hr>    
+    <h2><a id="contacts">Ви можете знайти мене тут</a></h2>
+     <table>
+        <tr>
+            <td><a href="https://twitter.com/?lang=uk">Твіттер</a></td>
+            <td>  <a href="https://www.instagram.com/">Інстаграм</a></td>
+            <td> <a href="https://accounts.google.com">Google+</a></td>
+             <td>  <a href="https://github.com/Snorchara">Гіт-Хаб</a></td>
+            <td><a href="https://www.facebook.com/profile.php?id=100004192967440">Фейсбук</a></td>
+        </tr>
+        <tr>
+            <td><img src="img/twitter.png" width="85" height="85" alt="twitter logo"> </td>
+            <td><img src="img/instagram.png" width="85" height="85" alt="instagram logo"></td>
+            <td><img src="img/g+.png" width="85" height=85 alt="google + logo"></td>
+            <td><img src="img/github.png" width="85" height="85" alt="github logo"></td>
+            <td><img src="img/fb.png" width="85" height="85" alt="facebook logo"></td>
+        </tr>
+    </table>
+    <h2>...або навіть тут</h2>
+   <!-- <img src="img/sample.png" alt="gmaps sample">-->
+  <iframe width="600"height="450"frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o
+    &q=Fedkovycha 60,Ukraine+Lviv" allowfullscreen>
+</iframe>
+    <hr>
+    <h2><a id="feedback">Залиште мені повідомлення</a></h2>
+    <br>
+    <form action="https://formspree.io/hawke8356@gmail.com" method="POST">
+        <fieldset>
+            <label>
+                Ім'я:
+                <input type="text" name="name"><br>
+            </label>
+            <br>
+           <label>
+              Ваш емейл : 
+                <input  type ="email" name="email"><br>
+            </label>
+            <br>
+            <label>
+                Повідомлення: 
+                <textarea>
+                </textarea>
+            </label>
+            <br>
+            <input class="reset" type="reset" name="submit" value="Очистити">
+            <input class="submit" type="submit" name="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <hr>
+    <footer>
+        <img src="img/fb2.png" width="50" height="50" alt="facebook logo">
+          <a href="https://www.facebook.com/profile.php?id=100004192967440"> https://www.facebook.com/beksiak/ </a>
+          <br>
+             <div>
+           <a href="index.html#home">На початок</a>/
+             <a href="index.html#about">Про мене</a>/
+             <a href="index.html#contacts">Контактні дані</a>/
+             <a href="index.html#feedback">Зв'язатись зі мною</a>
+        </div>
+         <p>Львів 2017 О.Бексяк</p>
+    </footer>
+</body>
+</html>
