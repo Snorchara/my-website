@@ -130,12 +130,14 @@ td a{
 }
 
 .nav-footer {
-    max-width: 70%;
-    max-height:70%;
+    /*max-width: 70%;*/
+    /*max-height:70%;*/
+    margin-left:15%;
+    margin-right:15%;
      border-radius: 5px;
      display:flex;
-     background-color:  #ffe3ae;
      justify-content:center;
+     background-color:  #ffe3ae;
    font-family: 'Comfortaa', cursive;
 }
 footer a:link {
