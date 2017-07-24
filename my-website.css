@@ -10,6 +10,7 @@ body {
  }
  header {
   background-color: #7a7a7a;
+   border:1px solid black;
    display:flex;
    flex-direction:row;
    justify-content:space-between;
@@ -23,6 +24,7 @@ body {
      flex-direction:column;
   width: 25%;
   min-width: 15%;
+  text-align: center;
   color: #ffe3ae;
  }
 .nav ul {
@@ -98,8 +100,10 @@ article {
 .note-text{
     max-width: 450px;
     display:flex;
+    text-align: center;
+    color:black;
     justify-content:flex-start;
-    background-image: url("img/note2.jpg");
+    background-image: url("http://spyhop.org/sendingmessages/wp-content/uploads/2016/04/spiral-notebook-paper-texture-457x600-400x200.jpg");
 }
 .bio
 {
@@ -115,6 +119,7 @@ article {
 footer {
      background-color: #7a7a7a;
    font-family: 'Comfortaa', cursive;
+    border:1px solid black;
 }
 td{
     min-width: 25px;
@@ -127,13 +132,14 @@ td a{
 .nav-footer {
     max-width: 70%;
     max-height:70%;
-     border-radius: 25px;
+     border-radius: 5px;
      display:flex;
      background-color:  #ffe3ae;
      justify-content:center;
    font-family: 'Comfortaa', cursive;
 }
 footer a:link {
+   
     color:black;
      text-decoration: none;
 }
