@@ -113,6 +113,8 @@ article {
 }
 .social{
     text-align: center;
+    margin-right:20%;
+    margin-left:20%;
         flex-direction:row;
     justify-content:center;
 }
@@ -161,8 +163,8 @@ main{
 }
 .map {
     display: block;
-    margin-left: 25%;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .reset{
     min-width: 202px;
