@@ -1,39 +1,46 @@
 <!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>My website</title>
-     <link href="my-website.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Oleh Beksiak personal website</title>
+    <link href="http://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" type="text/css"> 
+    <link href="my-website.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <h1><a id="home">Бексяк Олег</a></h1>
-        <h2>Персональний веб-сайт</h2>
-        <div>
+        <div class="logo">
+            <h1><a id="home">Бексяк Олег</a></h1>
+            <h2>Персональний веб-сайт</h2>
+        </div>
+        <div= class="nav">
              <a href="main-ua.html#home">На початок</a>
              <a href="main-ua.html#about">Про мене</a>
              <a href="main-ua.html#contacts">Контактні дані</a>
              <a href="main-ua.html#feedback">Зв'язатись зі мною</a>
         </div>
-        <select name="forma" onchange="location = this.value;">
+        <select name="form" onchange="location = this.value;">
             <option value="index-ua.html">Українська</option>
             <option value="index.html">English</option>
         </select>
     </header>
     <img src="img/header.png" width="950" height="400" alt="Намальований я">
-    <aside>
-        <h2> <a id="about"> Трішки про мене</a> </h2>
-        <article>
-          Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
+    <main>
+    
+            <div class="main_r" >
+                <h2>  <a id="about">Трішки про мене</a> </a></h2>
+                 <h2> Часова лінія моєї біографії</h2>
+           </div>
+            <br>
+            <div class="main_l">
+                 <p class="note-text">  Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
             Ви ще не помітили в заголовку веб-сторінки, мене звати Олег Бексяк. Я не хочу надавати багато особистої реальної інформації  (я хотів би дотримуватись трохи анонімності в мережі
-            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект. <br>
-        </article>
-        <div>
-            <h2> Часова лінія моєї біографії</h2>
-            <iframe src="tl-1996-ua.html" width="400"></iframe>
-        </div>
-    </aside>
+            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект.  Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
+            Ви ще не помітили в заголовку веб-сторінки, мене звати Олег Бексяк. Я не хочу надавати багато особистої реальної інформації  (я хотів би дотримуватись трохи анонімності в мережі
+            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект. <br><p><br>
+                    <iframe src="tl-1996-ua.html" width="400"></iframe>
+            </div>
+    </main>
     <hr>    
     <h2><a id="contacts">Ви можете знайти мене тут</a></h2>
      <table>

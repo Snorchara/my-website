@@ -91,9 +91,15 @@ max-width:950px;
 }
 article {
     max-width: 450px;
-    background-image: url("img/note2.jpg");
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+.note-text{
+    max-width: 450px;
     display:flex;
     justify-content:flex-start;
+    background-image: url("img/note2.jpg");
 }
 .bio
 {
@@ -131,10 +137,19 @@ footer a:link {
     color:black;
      text-decoration: none;
 }
-aside {
- display:flex;
- flex-direction:row;
- justify-content:space-around;
+main{
+ 
+}
+.main_r, .main_l
+{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.main_r
+{
+    display:flex;
+    justify-content:space-around;
 }
 .map {
     display: block;
