@@ -1,4 +1,5 @@
 /*font-family: 'Comfortaa', cursive;*/
+@media screen and (min-width: 480px) {
 body {
  background-color: #ffe3ae;
      max-width:950px;
@@ -7,6 +8,10 @@ body {
  h1,h2,h3
  {
   font-family: 'Comfortaa', cursive;
+ }
+ .soc-logo{
+     width:85px; 
+     height:85px;
  }
  header {
   background-color: #7a7a7a;
@@ -17,6 +22,19 @@ body {
     align-items:flex-end;
    font-family: 'Comfortaa', cursive;
  }
+  .banner
+ { content: url(img/header-min.jpg);
+     max-width: 480px;
+ }
+ .logo-link{
+     display: flex;
+     justify-content:space-around;
+ }
+ .logo-img{
+     display: flex;
+     justify-content:space-around; 
+ }
+ 
  #logo {
  display:flex;
  justify-content:flex-start;
@@ -29,22 +47,22 @@ body {
  }
 .nav ul {
       font-family: 'Comfortaa', cursive;
-    flex-wrap:nowrap;
- display:flex;
- justify-content:center;
-max-height:80%; 
-  min-width: 55%;
-  list-style: none;
-    border-radius: 25px 25px 0 0 ;
-  background-color: #7a7a7a;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+     flex-wrap:nowrap;
+     display:flex;
+     justify-content:center;
+        max-height:80%; 
+      min-width: 55%;
+      list-style: none;
+     border-radius: 25px 25px 0 0 ;
+      background-color: #7a7a7a;
+      text-align: center;
+      padding: 0;
+      margin: 0;
 }
 .nav li {
     background-color: #ffffff;
    
-  font-family: 'Oswald', sans-serif;
+     font-family: 'Comfortaa', cursive;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -52,6 +70,7 @@ max-height:80%;
 }
  
 .nav a {
+       font-family: 'Comfortaa', cursive;
   text-decoration: none;
   color: black;
   display: block;
@@ -71,7 +90,7 @@ max-height:80%;
     border-radius: 25px 25px 0 0 ;
 }
  
-@media screen and (min-width: 600px) {
+
   .nav li {
     width: 120px;
     border-bottom: none;
@@ -85,12 +104,8 @@ max-height:80%;
     display: inline-block;
     margin-right: -4px;
   }
-}
-.banner {
-max-width:950px;
 
- 
-}
+
 article {
     max-width: 450px;
     display:flex;
@@ -123,12 +138,11 @@ footer {
    font-family: 'Comfortaa', cursive;
     border:1px solid black;
 }
-td{
-    min-width: 25px;
-     font-family: 'Comfortaa', cursive; 
-}
-td a{
+
+.logo-link a:-webkit-any-link {
+     font-family: 'Comfortaa', cursive;
      text-decoration: none; 
+     color:black;
 }
 
 .nav-footer {
@@ -138,7 +152,7 @@ td a{
     margin-right:15%;
      border-radius: 5px;
      display:flex;
-     justify-content:center;
+     justify-content:space-around;
      background-color:  #ffe3ae;
    font-family: 'Comfortaa', cursive;
 }
@@ -147,24 +161,23 @@ footer a:link {
     color:black;
      text-decoration: none;
 }
-main{
- 
-}
 .main_r, .main_l
 {
     display: flex;
-    flex-direction:row;
-    justify-content:space-between;
+    flex-direction:column;
+   justify-content:center;
 }
-.main_r
-{
-    display:flex;
+
+#map {
+display: flex;
+justify-content:space-around;
+    max-width:950px;
+   
+ 
+}
+.h2-centered{
+    display: flex;
     justify-content:space-around;
-}
-.map {
-    display: block;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 .reset{
     min-width: 202px;
@@ -180,4 +193,232 @@ main{
 
 form{
    font-family: 'Comfortaa', cursive; 
+}
+.h2-logo
+{
+       margin:0 0 0 10px;
+}
+.h1-logo
+{     margin:0 0 0 10px;
+}
+#language{
+  border-radius: 5px 5px 0 0 ;
+  border-bottom-width: 0;
+   border-right-width: 0;
+}
+.nav-footer p
+{
+    margin :0;
+}
+}
+
+body {
+ background-color: #ffe3ae;
+     max-width:950px;
+     margin:0 auto;
+ }
+ h1,h2,h3
+ {
+  font-family: 'Comfortaa', cursive;
+ }
+ .soc-logo{
+     width:85px; 
+     height:85px;
+ }
+ header {
+  background-color: #7a7a7a;
+   border:1px solid black;
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;
+    align-items:flex-end;
+   font-family: 'Comfortaa', cursive;
+ }
+ .logo-link{
+     display: flex;
+     justify-content:space-around;
+ }
+ .logo-img{
+     display: flex;
+     justify-content:space-around; 
+ }
+ .banner
+ { content: url(img/header.jpg);
+     max-width: 950px;
+ }
+
+ #logo {
+ display:flex;
+ justify-content:flex-start;
+   align-items:flex-start;
+     flex-direction:column;
+  width: 25%;
+  min-width: 15%;
+  text-align: center;
+  color: #ffe3ae;
+ }
+.nav ul {
+      font-family: 'Comfortaa', cursive;
+     flex-wrap:nowrap;
+     display:flex;
+     justify-content:center;
+        max-height:80%; 
+      min-width: 55%;
+      list-style: none;
+     border-radius: 25px 25px 0 0 ;
+      background-color: #7a7a7a;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+}
+.nav li {
+    background-color: #ffffff;
+   
+     font-family: 'Comfortaa', cursive;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+    border-radius: 25px 25px 0 0 ;
+}
+ 
+.nav a {
+       font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: .3s background-color;
+    border-radius: 25px 25px 0 0 ;
+}
+ 
+.nav a:hover {
+  background-color: #ffe3ae;
+    border-radius: 25px 25px 0 0 ;
+}
+ 
+.nav a:active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+    border-radius: 25px 25px 0 0 ;
+}
+ 
+
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+
+article {
+    max-width: 450px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+.note-text{
+    max-width: 450px;
+    display:flex;
+    text-align: center;
+    color:black;
+    justify-content:flex-start;
+    background-image: url("http://spyhop.org/sendingmessages/wp-content/uploads/2016/04/spiral-notebook-paper-texture-457x600-400x200.jpg");
+}
+.bio
+{
+        display:flex;
+        flex-direction:column;
+    justify-content:flex-end;
+}
+.social{
+    text-align: center;
+    margin-right:20%;
+    margin-left:20%;
+        flex-direction:row;
+    justify-content:center;
+}
+footer {
+     background-color: #7a7a7a;
+   font-family: 'Comfortaa', cursive;
+    border:1px solid black;
+}
+
+.logo-link a:-webkit-any-link {
+     font-family: 'Comfortaa', cursive;
+     text-decoration: none; 
+     color:black;
+}
+
+.nav-footer {
+    /*max-width: 70%;*/
+    /*max-height:70%;*/
+    margin-left:15%;
+    margin-right:15%;
+     border-radius: 5px;
+     display:flex;
+     justify-content:space-around;
+     background-color:  #ffe3ae;
+   font-family: 'Comfortaa', cursive;
+}
+footer a:link {
+   
+    color:black;
+     text-decoration: none;
+}
+.main_r, .main_l
+{
+    display: flex;
+    flex-direction:column;
+   justify-content:center;
+}
+
+#map {
+display: flex;
+justify-content:space-around;
+    max-width:950px;
+   
+ 
+}
+.h2-centered{
+    display: flex;
+    justify-content:space-around;
+}
+.reset{
+    min-width: 202px;
+    min-height:45px;
+    background-color:#e61610;
+    border-style:none; 
+}
+.submit{
+    background-color:#2196f3;
+     min-width: 202px;
+    min-height:45px;
+}
+
+form{
+   font-family: 'Comfortaa', cursive; 
+}
+.h2-logo
+{
+       margin:0 0 0 10px;
+}
+.h1-logo
+{     margin:0 0 0 10px;
+}
+#language{
+  border-radius: 5px 5px 0 0 ;
+  border-bottom-width: 0;
+   border-right-width: 0;
+}
+.nav-footer p
+{
+    margin :0;
 }

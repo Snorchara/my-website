@@ -10,8 +10,8 @@
 <body>
     <header>
         <div id="logo">
-            <h1><a id="home">Oleh Beksiak</a></h1>
-            <h2>Personal website</h2>
+            <h1 class= "h1-logo"><a id="home">Oleh Beksiak</a></h1>
+            <h2 class="h2-logo">Personal website</h2>
         </div>
         <div class="nav">
             <ul>
@@ -21,59 +21,51 @@
                  <li><a href="index.html#feedback">Feedback</a></li>
              </ul>
         </div>
-        <select name="form" onchange="location = this.value;">
+        <select id="language" name="form" onchange="location = this.value;">
               <option value="index.html">English</option>
               <option value="main-ua.html">Ukrainian</option>
         </select>
     </header>
-    <img class="banner" src="img/header.png" width="950" height="400" alt="Animated me">
+    <div class="banner"></div>
     <main>
     
             <div class="main_r" >
                 <h2>  <a id="about">A little about me </a></h2>
-                 <h2> My biography timeline</h2>
-           </div>
-            <br>
-            <div class="main_l">
                  <p class="note-text">  Hello, you have visited my personal website. Hope you feel comfortable around? Go ahead click those buttons) But first read this little info about me and this website. Well if 
                    you haven't already noticed from the header of the web-page, my name is Oleh Beksiak. I dont wish to give much real info about me (i like to keep a little of anonymity on the 
                    internet) and as this web page is designed as my personal 1st front-end project.
                     Hello, you have visited my personal website. Hope you feel comfortable around? Go ahead click those buttons) But first read this little info about me and this website. Well if 
                    you haven't already noticed from the header of the web-page, my name is Oleh Beksiak. I dont wish to give much real info about me (i like to keep a little of anonymity on the 
                    internet) and as this web page is designed as my personal 1st front-end project.<p><br>
+             
+           </div>
+            <br>
+            <div class="main_l">
+                    <h2> My biography timeline</h2>
                     <iframe src="tl-1996.html" width="400"></iframe>
             </div>
     </main>
     <hr>    
-    <h2><a id="contacts">You can find me here</a></h2>
-    <table class="social">
-        <tr>
-            <td><a href="https://twitter.com/?lang=uk">Twitter</a></td>
-            <td></td>
-            <td>  <a href="https://www.instagram.com/">Instagram</a></td>
-              <td></td>
-            <td> <a href="https://accounts.google.com">Google+</a></td>
-              <td></td>
-             <td>  <a href="https://github.com/Snorchara">Github</a></td>
-               <td></td>
-            <td><a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a></td>
-        </tr>
-        <tr>
-            <td><img src="img/twitter.png" width="85" height="85" alt="twitter logo"> </td>
-              <td></td>
-            <td><img src="img/instagram.png" width="85" height="85" alt="instagram logo"></td>
-              <td></td>
-            <td><img src="img/g+.png" width="85" height=85 alt="google + logo"></td>
-              <td></td>
-            <td><img src="img/github.png" width="85" height="85" alt="github logo"></td>
-              <td></td>
-            <td><img src="img/fb.png" width="85" height="85" alt="facebook logo"></td>
-        </tr>
-    </table>
+    <h2 class="h2-centered"><a id="contacts">You can find me here</a></h2>
+    
+      <div class="logo-link">
+                <a href="https://twitter.com/?lang=uk">Twitter</a>
+              <a href="https://www.instagram.com/">Instagram</a>
+              <a href="https://accounts.google.com">Google+</a>
+               <a href="https://github.com/Snorchara">Github</a>
+              <a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a>
+       </div>
+       <div class="logo-img">
+            <img  class="soc-logo"src="img/twitter.png"  alt="twitter logo"> 
+            <img class="soc-logo" src="img/instagram.png"  alt="instagram logo">
+            <img class="soc-logo" src="img/g+.png"  alt="google + logo">
+            <img class="soc-logo" src="img/github.png"  alt="github logo">
+            <img class="soc-logo" src="img/fb.png" alt="facebook logo">
+        </div>
     <div class="map">
-        <h2>...or here</h2>
+        <h2 class="h2-centered">...or here</h2>
         <!-- <img src="img/sample.png" alt="gmaps sample">-->
-       <iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o&q=Fedkovycha60,Ukraine+Lviv" allowfullscreen>
+       <iframe id="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o&q=Fedkovycha60,Ukraine+Lviv" allowfullscreen>
         </iframe>
      </div>
     <hr>
@@ -105,7 +97,7 @@
     <footer>
         <img src="img/fb2.png" width="50" height="50" alt="facebook logo">
           <a href="https://www.facebook.com/profile.php?id=100004192967440"> https://www.facebook.com/beksiak/ </a>
-          <br>
+          <hr>
              <div class="nav-footer">
              <a href="index.html#home">Home</a>/
              <a href="index.html#about">About me</a>/
