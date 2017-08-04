@@ -1,83 +1,123 @@
 <!doctype html>
 <html lang="uk">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Oleh Beksiak personal website</title>
     <link href="http://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" type="text/css"> 
+
     <link href="my-website.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1><a id="home">Бексяк Олег</a></h1>
-            <h2>Персональний веб-сайт</h2>
+        <div id="logo">
+            <h1 class= "h1-logo"><a id="home">Бексяк Олег</a></h1>
+            <h2 class="h2-logo">Персональний веб-сайт</h2>
         </div>
-        <div= class="nav">
-             <a href="main-ua.html#home">На початок</a>
-             <a href="main-ua.html#about">Про мене</a>
-             <a href="main-ua.html#contacts">Контактні дані</a>
-             <a href="main-ua.html#feedback">Зв'язатись зі мною</a>
-        </div>
-        <select name="form" onchange="location = this.value;">
-            <option value="index-ua.html">Українська</option>
-            <option value="index.html">English</option>
+       <div class="lang_nav">
+           <select id="language" name="form" onchange="location = this.value;">
+              <option value="index.html">ENG</option>
+              <option value="main-ua.html">UA</option>
         </select>
+        <div class="nav">
+                <ul>
+                     <li><a href="index.html#home">Початок</a></li>
+                     <li><a href="index.html#about">Про мене</a></li>
+                     <li><a href="index.html#contacts">Контакти</a></li>
+                     <li><a href="index.html#feedback">Зв'язатись</a></li>
+                 </ul>
+            </div>
+     </div>
     </header>
-    <img src="img/header.png" width="950" height="400" alt="Намальований я">
+    <div ><img src="img/header.png" max-width="950px" alt="Animated O.Beksiak"></img></div>
     <main>
     
             <div class="main_r" >
-                <h2>  <a id="about">Трішки про мене</a> </a></h2>
-                 <h2> Часова лінія моєї біографії</h2>
-           </div>
-            <br>
-            <div class="main_l">
-                 <p class="note-text">  Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
+                <h2>  <a id="about">Трішки про мене </a></h2>
+                 <p class="note-text"> Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
             Ви ще не помітили в заголовку веб-сторінки, мене звати Олег Бексяк. Я не хочу надавати багато особистої реальної інформації  (я хотів би дотримуватись трохи анонімності в мережі
             Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект.  Привіт, ви відвідали мою особисту сторінку. Сподіваюся, що ви почуваєтесь комфортно? Не чекайте натисніть ці кнопки) Але спершу прочитайте цю маленьку інформацію про мене та цей сайт. Ну якщо
             Ви ще не помітили в заголовку веб-сторінки, мене звати Олег Бексяк. Я не хочу надавати багато особистої реальної інформації  (я хотів би дотримуватись трохи анонімності в мережі
-            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект. <br><p><br>
+            Інтернет), так як ця веб-сторінка розроблена як мій перший веб проект.<p><br>
+           </div>
+            <br>
+            <div class="main_l">
+                    <h2> Часова лінія моєї біографії</h2>
                     <iframe src="tl-1996-ua.html" width="400"></iframe>
             </div>
     </main>
     <hr>    
-    <h2><a id="contacts">Ви можете знайти мене тут</a></h2>
-     <table>
-        <tr>
-            <td><a href="https://twitter.com/?lang=uk">Твіттер</a></td>
-            <td>  <a href="https://www.instagram.com/">Інстаграм</a></td>
-            <td> <a href="https://accounts.google.com">Google+</a></td>
-             <td>  <a href="https://github.com/Snorchara">Гіт-Хаб</a></td>
-            <td><a href="https://www.facebook.com/profile.php?id=100004192967440">Фейсбук</a></td>
-        </tr>
-        <tr>
-            <td><img src="img/twitter.png" width="85" height="85" alt="twitter logo"> </td>
-            <td><img src="img/instagram.png" width="85" height="85" alt="instagram logo"></td>
-            <td><img src="img/g+.png" width="85" height=85 alt="google + logo"></td>
-            <td><img src="img/github.png" width="85" height="85" alt="github logo"></td>
-            <td><img src="img/fb.png" width="85" height="85" alt="facebook logo"></td>
-        </tr>
-    </table>
-    <h2>...або навіть тут</h2>
-   <!-- <img src="img/sample.png" alt="gmaps sample">-->
-  <iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o&q=Fedkovycha60,Ukraine+Lviv" allowfullscreen>
-    </iframe>
+    <h2 class="h2-centered"><a id="contacts">Ви можете знайти мене тут</a></h2>
+    
+  <div class="container">
+    <div>
+          <p>
+            <a href="https://twitter.com/?lang=uk">Твіттер</a>
+          </p>
+          <div>
+              <img  class="soc-logo"src="img/twitter.png"  alt="twitter logo">
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://www.instagram.com/">Інстаграм</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/instagram.png"  alt="instagram logo">
+    
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://accounts.google.com">Google+</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/g+.png"  alt="google + logo">
+    
+          </div>
+    </div>
+    <div>
+          <p>
+         <a href="https://github.com/Snorchara">Гіт-Хаб</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/github.png"  alt="github logo">
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://www.facebook.com/profile.php?id=100004192967440">Фейсбук</a>
+          </p>
+          <div>
+               <img class="soc-logo" src="img/fb.png" alt="facebook logo">
+          </div>
+        </div>
+
+</div>
+    <div class="map">
+        <h2 class="h2-centered">...або навіть тут</h2>
+        <!-- <img src="img/sample.png" alt="gmaps sample">-->
+       <iframe id="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkVWWTrQb7JuLm1kvkrkdDiDLTJ9uly0o&q=Fedkovycha60,Ukraine+Lviv" allowfullscreen>
+        </iframe>
+     </div>
     <hr>
-    <h2><a id="feedback">Залиште мені повідомлення</a></h2>
+    <h2 class="message"><a id="feedback">Залиште мені повідомлення</a></h2>
     <br>
-    <form action="https://formspree.io/hawke8356@gmail.com" method="POST">
-        <fieldset>
+  
+    <form action="https://formspree.io/hawke8356@gmail.com" method="POST" class="form">
+        <fieldset class="feed">
             <label>
-                Ім'я:
+               Ім'я:
                 <input type="text" name="name"><br>
             </label>
             <br>
+            <br>
            <label>
-              Ваш емейл : 
+               Ваш емейл:
                 <input  type ="email" name="email"><br>
             </label>
             <br>
+            
             <label>
                 Повідомлення: 
                 <textarea>
@@ -92,14 +132,15 @@
     <footer>
         <img src="img/fb2.png" width="50" height="50" alt="facebook logo">
           <a href="https://www.facebook.com/profile.php?id=100004192967440"> https://www.facebook.com/beksiak/ </a>
-          <br>
-             <div>
-              <a href="main-ua.html#home">На початок</a>
-             <a href="main-ua.html#about">Про мене</a>
-             <a href="main-ua.html#contacts">Контактні дані</a>
-             <a href="main-ua.html#feedback">Зв'язатись зі мною</a>
+          <hr>
+             <div class="nav-footer">
+             <a href="index.html#home">На початок</a>/
+             <a href="index.html#about">Про мене</a>/
+             <a href="index.html#contacts">Контактні дані</a>/
+             <a href="index.html#feedback">Зв'язатись зі мною</a>
+             <p>Львів 2017 О.Бексяк</p>
         </div>
-         <p>Львів 2017 О.Бексяк</p>
+       
     </footer>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Oleh Beksiak personal website</title>
     <link href="http://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" type="text/css"> 
+
     <link href="my-website.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -13,20 +14,22 @@
             <h1 class= "h1-logo"><a id="home">Oleh Beksiak</a></h1>
             <h2 class="h2-logo">Personal website</h2>
         </div>
-        <div class="nav">
-            <ul>
-                 <li><a href="index.html#home">Home</a></li>
-                 <li><a href="index.html#about">About me</a></li>
-                 <li><a href="index.html#contacts">Contacts</a></li>
-                 <li><a href="index.html#feedback">Feedback</a></li>
-             </ul>
-        </div>
-        <select id="language" name="form" onchange="location = this.value;">
-              <option value="index.html">English</option>
-              <option value="main-ua.html">Ukrainian</option>
+       <div class="lang_nav">
+           <select id="language" name="form" onchange="location = this.value;">
+              <option value="index.html">ENG</option>
+              <option value="main-ua.html">UA</option>
         </select>
+        <div class="nav">
+                <ul>
+                     <li><a href="index.html#home">Home</a></li>
+                     <li><a href="index.html#about">About me</a></li>
+                     <li><a href="index.html#contacts">Contacts</a></li>
+                     <li><a href="index.html#feedback">Feedback</a></li>
+                 </ul>
+            </div>
+     </div>
     </header>
-    <div class="banner"></div>
+    <div ><img src="img/header.png" max-width="950px"></img></div>
     <main>
     
             <div class="main_r" >
@@ -48,20 +51,51 @@
     <hr>    
     <h2 class="h2-centered"><a id="contacts">You can find me here</a></h2>
     
-      <div class="logo-link">
-                <a href="https://twitter.com/?lang=uk">Twitter</a>
-              <a href="https://www.instagram.com/">Instagram</a>
-              <a href="https://accounts.google.com">Google+</a>
-               <a href="https://github.com/Snorchara">Github</a>
-              <a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a>
-       </div>
-       <div class="logo-img">
-            <img  class="soc-logo"src="img/twitter.png"  alt="twitter logo"> 
-            <img class="soc-logo" src="img/instagram.png"  alt="instagram logo">
-            <img class="soc-logo" src="img/g+.png"  alt="google + logo">
-            <img class="soc-logo" src="img/github.png"  alt="github logo">
-            <img class="soc-logo" src="img/fb.png" alt="facebook logo">
+  <div class="container">
+    <div>
+          <p>
+            <a href="https://twitter.com/?lang=uk">Twitter</a>
+          </p>
+          <div>
+              <img  class="soc-logo"src="img/twitter.png"  alt="twitter logo">
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://www.instagram.com/">Instagram</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/instagram.png"  alt="instagram logo">
+    
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://accounts.google.com">Google+</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/g+.png"  alt="google + logo">
+    
+          </div>
+    </div>
+    <div>
+          <p>
+         <a href="https://github.com/Snorchara">Github</a>
+          </p>
+          <div>
+              <img class="soc-logo" src="img/github.png"  alt="github logo">
+          </div>
+    </div>
+    <div>
+          <p>
+          <a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a>
+          </p>
+          <div>
+               <img class="soc-logo" src="img/fb.png" alt="facebook logo">
+          </div>
         </div>
+
+</div>
     <div class="map">
         <h2 class="h2-centered">...or here</h2>
         <!-- <img src="img/sample.png" alt="gmaps sample">-->
@@ -69,20 +103,23 @@
         </iframe>
      </div>
     <hr>
-    <h2><a id="feedback">Leave me a message</a></h2>
+    <h2 class="message"><a id="feedback">Leave me a message</a></h2>
     <br>
-    <form action="https://formspree.io/hawke8356@gmail.com" method="POST">
-        <fieldset>
+  
+    <form action="https://formspree.io/hawke8356@gmail.com" method="POST" class="form">
+        <fieldset class="feed">
             <label>
                 Name:
                 <input type="text" name="name"><br>
             </label>
+            <br>
             <br>
            <label>
                 Your email : 
                 <input  type ="email" name="email"><br>
             </label>
             <br>
+            
             <label>
                 Text: 
                 <textarea>
