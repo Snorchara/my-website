@@ -11,6 +11,7 @@
     <link href="my-website.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
             <div class="navbar-header">
@@ -43,6 +44,39 @@
     </nav>
 
     <div class="bar-header"><img src="img/header.png"  alt="animated O.Beksiak"></div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                         <img class="img-carousel" src="img/js.png" alt="JS">
+                    </div>
+                
+                    <div class="item">
+                     <img class="img-carousel" src="img/html.png" alt="HTML">
+                    </div>
+                
+                    <div class="item">
+                      <img class="img-carousel" src="img/css.png" alt="CSS">
+                    </div>
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
     <main>
     
             <div class="main_r" >
@@ -146,7 +180,7 @@
              <a href="index.html#feedback">Feedback</a>
              <p>Lviv 2017 O.Beksiak</p>
         </div>
-       
     </footer>
+     <script src="script/index.js"></script>
 </body>
 </html>
