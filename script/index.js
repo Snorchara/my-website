@@ -1,6 +1,6 @@
 $(function(){
 $('.carousel').carousel({
-      interval: 1500
+      interval: 2500
     });
 $('.carousel-control.right').trigger('click');
 });
