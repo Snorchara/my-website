@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Oleh Beksiak personal website</title>
-    <link href="http://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" type="text/css"> 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="my-website.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <h1 class= "h1-logo"><a id="home">Oleh Beksiak</a></h1>
-            <h2 class="h2-logo">Personal website</h2>
-        </div>
-       <div class="lang_nav">
-           <select id="language" name="form" onchange="location = this.value;">
-              <option value="index.html">ENG</option>
-              <option value="main-ua.html">UA</option>
-        </select>
-        <div class="nav">
-                <ul>
-                     <li><a href="index.html#home">Home</a></li>
-                     <li><a href="index.html#about">About me</a></li>
-                     <li><a href="index.html#contacts">Contacts</a></li>
-                     <li><a href="index.html#feedback">Feedback</a></li>
-                 </ul>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a  id="home" class="navbar-brand" href="#home">Oleh Beksiak<br> Personal Website</a>
             </div>
-     </div>
-    </header>
-    <div ><img src="img/header.png" max-width="950px"></img></div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#home"> Home </a>
+                </li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+              
+              </ul>
+                  <div class="lang_nav">
+                        <select id="language" name="form" onchange="location = this.value;">
+                      <option value="index.html">ENG</option>
+                      <option value="main-ua.html">UA</option>
+                </select>   
+                </div>
+            </div>
+      </div>
+
+    </nav>
+
+    <div class="bar-header"><img src="img/header.png"  alt="animated O.Beksiak"></div>
     <main>
     
             <div class="main_r" >
@@ -45,22 +58,22 @@
             <br>
             <div class="main_l">
                     <h2> My biography timeline</h2>
-                    <iframe src="tl-1996.html" width="400"></iframe>
+                    <iframe class="bio-frame" src="tl-1996.html"></iframe>
             </div>
     </main>
     <hr>    
     <h2 class="h2-centered"><a id="contacts">You can find me here</a></h2>
     
-  <div class="container">
-    <div>
+  <div class="container-soc">
+    <div class="penta-logo">
           <p>
             <a href="https://twitter.com/?lang=uk">Twitter</a>
           </p>
           <div>
-              <img  class="soc-logo"src="img/twitter.png"  alt="twitter logo">
+              <img  class="soc-logo" src="img/twitter.png"  alt="twitter logo">
           </div>
     </div>
-    <div>
+    <div class="penta-logo">
           <p>
           <a href="https://www.instagram.com/">Instagram</a>
           </p>
@@ -69,7 +82,7 @@
     
           </div>
     </div>
-    <div>
+    <div class="penta-logo">
           <p>
           <a href="https://accounts.google.com">Google+</a>
           </p>
@@ -78,7 +91,7 @@
     
           </div>
     </div>
-    <div>
+    <div class="penta-logo">
           <p>
          <a href="https://github.com/Snorchara">Github</a>
           </p>
@@ -86,7 +99,7 @@
               <img class="soc-logo" src="img/github.png"  alt="github logo">
           </div>
     </div>
-    <div>
+    <div class="penta-logo">
           <p>
           <a href="https://www.facebook.com/profile.php?id=100004192967440">facebook</a>
           </p>
@@ -105,31 +118,22 @@
     <hr>
     <h2 class="message"><a id="feedback">Leave me a message</a></h2>
     <br>
-  
-    <form action="https://formspree.io/hawke8356@gmail.com" method="POST" class="form">
-        <fieldset class="feed">
-            <label>
-                Name:
-                <input type="text" name="name"><br>
-            </label>
-            <br>
-            <br>
-           <label>
-                Your email : 
-                <input  type ="email" name="email"><br>
-            </label>
-            <br>
-            
-            <label>
-                Text: 
-                <textarea>
-                </textarea>
-            </label>
-            <br>
-            <input class="reset" type="reset" name="submit" value="Delete">
-            <input class="submit" type="submit" name="submit" value="Send">
-        </fieldset>
-    </form>
+  <div class="form-style-2">
+
+        <form action="https://formspree.io/hawke8356@gmail.com" method="POST">
+                <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" required /></label>
+                <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" required /></label>
+                <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
+                <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+                <option value="General Question">General</option>
+                <option value="Advertise">Advertisement</option>
+                <option value="Partnership">Partnership</option>
+                </select></label>
+                <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field" required></textarea></label>
+                
+                <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+        </form>
+</div>
     <hr>
     <footer>
         <img src="img/fb2.png" width="50" height="50" alt="facebook logo">

@@ -23,33 +23,60 @@ body {
     align-items:flex-end;
    font-family: 'Comfortaa', cursive;
  }
+ .navbar-brand{
+     font-family: 'Comfortaa', cursive;
+    font-size: 20px ;
+   
+    color: #ffe3ae;
   
+}
+.penta-logo{
+    display: flex;
+
+    flex-direction:column;
+}
+.penta-logo div{
+    max-width: 90px;
+}
   .banner 
- { background-image: url("img/header.jpg");
+ {
+     /*background-image: url("img/header.jpg");*/
      max-width: 950px;
  }
  .logo-link{
      display: flex;
      justify-content:space-around;
  }
+ .navbar  {
+    
+     margin-bottom: 0;}
+.container-fluid{
+     background-color:  #7a7a7a;
+ }
  .logo-img{
      display: flex;
      justify-content:space-around; 
  }
- .container {
+ .container-soc {
     display:block;
 }
- #logo {
+ #home {
  display:flex;
  justify-content:flex-start;
    align-items:flex-start;
-     flex-direction:column;
-  width: 25%;
-  min-width: 15%;
   text-align: center;
   color: #ffe3ae;
  }
-.nav ul {
+.bio-frame{
+    min-height: 280px;
+    border-style: hidden;
+    background-image: url("img/note4.png");
+}
+.main_l h2{
+    margin:0 auto;
+    
+}
+.container ul {
       font-family: 'Comfortaa', cursive;
      display:flex;
      flex-wrap:wrap;
@@ -78,13 +105,13 @@ body {
        font-family: 'Comfortaa', cursive;
   text-decoration: none;
   color: black;
-  display: block;
+
   transition: .3s background-color;
     border-radius: 25px 25px 0 0 ;
 }
  
 .nav a:hover {
-  background-color: #ffe3ae;
+  background-color: #ffe3ae !important;
     border-radius: 25px 25px 0 0 ;
 }
  
@@ -105,10 +132,11 @@ article {
 .note-text{
     max-width: 450px;
     display:flex;
+    font-family: 'Comfortaa', cursive;
     text-align: center;
     color:black;
     justify-content:flex-start;
-    background-image: url("http://spyhop.org/sendingmessages/wp-content/uploads/2016/04/spiral-notebook-paper-texture-457x600-400x200.jpg");
+     background-image: url("img/note4.png");
 }
 .bio
 {
@@ -128,9 +156,13 @@ footer {
    font-family: 'Comfortaa', cursive;
     border:1px solid black;
 }
+
 .lang_nav{
+    margin-left: 80px;
     display: flex;
-    flex-direction:column;
+
+     align-self: flex-end;
+    flex-direction:row;
 }
 .logo-link a:-webkit-any-link {
      font-family: 'Comfortaa', cursive;
@@ -157,16 +189,22 @@ footer a:link {
 main {
     display: flex;
     flex-direction:row;
-   justify-content:space-between;
+   justify-content:space-around;
 }
 
 
-
+h2 a{
+    color: black;
+}
+h2 a:hoover{
+     text-decoration: none;
+}
 .main_r, .main_l
-{
+{min-width:380px;
     display: flex;
     flex-direction:column;
    justify-content:center;
+ 
 }
 
 .map,#map {
@@ -191,6 +229,8 @@ flex-direction:column;
     border-style:none; 
 }
 .submit{
+    margin-left: 25%;
+    margin-right: 25%;
     background-color:#2196f3;
      min-width: 202px;
     min-height:45px;
@@ -223,14 +263,25 @@ form label input{
 {     margin:0 0 0 10px;
 }
 #language{
+    position: absolute;
+    right:0;
+    top:0;
+    display: flex;
+     align-self: flex-end;
+     margin-left: 100px;
   border-radius: 5px 5px 0 0 ;
   border-bottom-width: 0;
    border-right-width: 0;
-   margin-bottom: 10px;
-   margin-left: 80%;
-   max-width: 8vh;
+   min-width: 60px;
+   /*margin-bottom: 10px;*/
+   /*margin-left: 80%;*/
+  
 }
-
+hr{
+   border-color: #7a7a7a;
+   border-radius: 5px 5px 5px 5px ; 
+   border-width: 6px;
+}
 .nav-footer p
 {
     margin :0;
@@ -250,6 +301,11 @@ body {
      width:85px; 
      height:85px;
  }
+ .container-fluid{
+     background-color:  #7a7a7a;
+ }
+  .navbar 
+ {margin-bottom: 0;}
  header {
   background-color: #7a7a7a;
    border:1px solid black;
@@ -267,35 +323,50 @@ body {
      display: flex;
      justify-content:space-around; 
  }
- .banner img
- { content: url(img/header.jpg);
+ .banner img {
+     /*content: url(img/header.jpg);*/
      max-width: 950px;
  }
 
-.container {
-  
+.container-soc {
+margin: 0 auto;
+max-width: 750px;
     display: flex;
-    justify-content: space-around;
+ 
+  justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
 }
-.container > div {
+.container ul {
+      font-family: 'Comfortaa', cursive;
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:center;
+        max-height:80%;
+      list-style: none;
+     border-radius: 25px 25px 0 0 ;
+      background-color: #7a7a7a;
+      text-align: center;
+
+}
+.container-soc > div {
     width: 20%;
     min-width: 100px;
     margin: 0;
 }
-.container > div:nth-child(1),
-.container > div:nth-child(2){
+.container-soc > div:nth-child(1),
+.container-soc > div:nth-child(2){
     width: 45%;
 }
-.container > div:nth-child(3){
+.container-soc > div:nth-child(3){
     width: 95%;
 margin-left:30% ;
 margin-right:30% ;
     justify-content:center;
 }
-.container > div:nth-child(4),
-.container > div:nth-child(5){
+.container-soc > div:nth-child(4),
+.container-soc > div:nth-child(5){
     width: 45%;
 }
 div > img {
@@ -344,9 +415,9 @@ div > img {
   transition: .3s background-color;
     border-radius: 25px 25px 0 0 ;
 }
- 
+
 .nav a:hover {
-  background-color: #ffe3ae;
+  background-color: #ffe3ae !important;
     border-radius: 25px 25px 0 0 ;
 }
  
@@ -385,7 +456,11 @@ article {
     text-align: center;
     color:black;
     justify-content:flex-start;
-    background-image: url("http://spyhop.org/sendingmessages/wp-content/uploads/2016/04/spiral-notebook-paper-texture-457x600-400x200.jpg");
+    background-image: url("img/note4.png");
+}
+.bar-header
+{max-width: 950px;
+    
 }
 .bio
 {
@@ -404,6 +479,10 @@ footer {
      background-color: #7a7a7a;
    font-family: 'Comfortaa', cursive;
     border:1px solid black;
+   
+}
+footer a{
+    margin-left: 0;
 }
 
 .logo-link a:-webkit-any-link {
@@ -415,8 +494,8 @@ footer {
 .nav-footer {
     /*max-width: 70%;*/
     /*max-height:70%;*/
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:5%;
+    margin-right:5%;
      border-radius: 5px;
      display:flex;
      justify-content:space-around;
@@ -455,6 +534,15 @@ flex-direction:column;
     background-color:#e61610;
     border-style:none; 
 }
+ #home {
+ display:flex;
+ justify-content:flex-start;
+   align-items:flex-start;
+  text-align: center;
+  color: #ffe3ae;
+  margin-top: -10px;
+ }
+
 .submit{
     background-color:#2196f3;
      min-width: 202px;
@@ -473,6 +561,13 @@ margin:0 auto;
   justify-content:center;
   flex-direction:column;
 }
+.navbar-brand{
+     font-family: 'Comfortaa', cursive;
+    font-size: 20px ;
+   
+    color: #ffe3ae;
+  
+}
 .h2-logo
 {
        margin:0 0 0 10px;
@@ -484,11 +579,116 @@ margin:0 auto;
   border-radius: 5px 5px 0 0 ;
   border-bottom-width: 0;
    border-right-width: 0;
-   margin-bottom: 10px;
-   margin-left: 80%;
-   max-width: 8vh;
+   min-width: 60px;
+   /*margin-bottom: 10px;*/
+   /*margin-left: 80%;*/
+  
+}
+hr{
+   border-color: #7a7a7a;
+   border-radius: 5px 5px 5px 5px ; 
+   border-width: 6px;
 }
 .nav-footer p
 {
     margin :0;
+}
+
+.form-style-2{
+      margin: auto;
+    
+    max-width: 500px;
+  
+    
+    font: 15px  'Comfortaa', cursive, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.form-style-2 label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.form-style-2 span.required{
+    color:red;
+}
+.form-style-2 .tel-number-field{
+    width: 48%;
+    text-align: center;
+}
+.form-style-2 input.input-field{
+    width: 48%;
+   
+}
+.bio-frame{
+    min-height: 280px;
+    border-style: hidden;
+    background-image: url("img/note4.png");
+}
+.main_l h2{
+    margin:0 auto;
+    
+}
+.form-style-2 input.input-field,
+.form-style-2 .tel-number-field,
+.form-style-2 .textarea-field,
+ .form-style-2 .select-field{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+h2 a{
+    color: black;
+}
+h2 a:hoover{
+     text-decoration: none;
+}
+.form-style-2 .input-field:focus,
+.form-style-2 .tel-number-field:focus,
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+    border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+    height:100px;
+    width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
 }
